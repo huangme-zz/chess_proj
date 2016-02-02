@@ -27,6 +27,9 @@ class Piece:
     if type(enemy_xiangqi_board) != type(XiangQiBoard()):
       raise XiangQiBoardException()
 
+    if not xiangqi_board.isEmptyLoc(loc):
+      raise LocationException()
+
     if not xiangqi_board.isValidLoc(loc):
       raise LocationException()
 
