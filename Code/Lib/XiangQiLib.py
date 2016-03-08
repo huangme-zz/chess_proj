@@ -125,6 +125,11 @@ class XiangQiBoard:
     self.board[x][y] = -1
     self.dead.append(piece)
 
+  ''' Clear the board '''
+  def clear(self):
+    self.__init__()
+
+
 
 
 
